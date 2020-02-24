@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/fen__padding_medium">
+
+    <video.full.lln.gestures.FensterGestureControllerView
+        android:id="@+id/fen__play_gesture_controller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <SeekBar
+        android:id="@+id/fen__play_gesture_horizontal_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fen__media_controller_seekbar_height"
+        android:layout_centerInParent="true"
+        android:max="1000" />
+
+    <SeekBar
+        android:id="@+id/fen__play_gesture_vertical_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fen__media_controller_seekbar_height"
+        android:max="1000"
+        android:rotation="90" />
+
+</RelativeLayout>
